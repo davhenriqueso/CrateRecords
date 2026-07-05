@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="topblackbar">
+        <div class="topblackbararea">
+            <div class="leftblackbar"><img src="imgs/Truck.svg" alt="">Frete grátis acima de R$299</div>
+            <div class="middleblackbar"><img src="imgs/Globe.svg" alt="">Envio para todo o Brasil</div>
+            <div class="rightblackbar"><img src="imgs/Home.svg" alt="">Devoluções faceis</div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-inner">
+            <div class="header-left">
+                <a class="headerlogo-link" href="index.html">
+                    <img class="logoheader" src="imgs/CrateRecordsLogo.svg" alt="Crate Records" width="170" height="40">
+                </a>
+
+                <nav class="headernav" aria-label="Navegação principal">
+                    <a href="allvinyls.html">Todos os Vinis</a>
+                    <a href="aboutus.html">Sobre Nós</a>
+                    <a href="support.html">Suporte</a>
+                </nav>
+            </div>
+
+            <div class="header-right">
+                <form class="headersearch" role="search" action="/busca" method="get">
+                    <label for="header-search-input" class="visually-hidden">Pesquisar</label>
+                    <input id="header-search-input" type="search" name="q" placeholder="Pesquisar">
+                    <button type="submit" class="lupa-btn" aria-label="Buscar">
+                        <img class="lupa" src="imgs/Lupa.svg" alt="">
+                    </button>
+                </form>
+
+                <div class="headeractions">
+                    <a class="headeraction" href="cadastro.html" aria-label="Conta">
+                        <img class="icontopright" src="imgs/User.svg" alt=""><span>Conta</span>
+                    </a>
+                    <a class="headeraction" href="pedidos.html" aria-label="Pedidos">
+                        <img class="icontopright" src="imgs/Heart.svg" alt=""><span>Pedidos</span>
+                    </a>
+                    <a class="headeraction" href="carrinho.html" aria-label="Carrinho">
+                        <img class="icontopright" src="imgs/Shopping cart.svg" alt=""><span>Carrinho</span>
+                        <span class="cartbadge" id="cart-badge">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <img src="imgs/SuaProxima.png" alt="">
+        <a href="vinyls.html" class="explorarbtn">Explorar Vinis</a>
+        <a href="" class="verabtn">Ver Assinatura</a>
+    </div>
+
+    <div id="sec02">
+
+        <div class="destaques">
+    <div class="destaquestop">
+        <div class="destaquestitulo">Hip Hop</div>
+        <div class="destaquesvertudo"><a href="">Ver Tudo ></a></div>
+    </div>
+    <div class="destaquesvinyls">
+        <a href="produto.html" class="vinyl">
+            <div class="vinyldiv1">
+                <img class="vinylimage" src="imgs/Albums/mbdtf.jpg" alt="">
+                <img class="vinylimage2" src="imgs/vinyl.png" alt="">
+            </div>
+            <div class="vinyl-info">
+                <div class="vinyldiv2">My Beautiful Dark Twisted Fantasy</div>
+                <div class="vinyldiv3">Kanye West</div>
+                <div class="vinyl-bottom">
+                    <div class="vinyl-price">R$ 249,90</div>
+                    <div class="vinyl-condition novo">Novo</div>
+                </div>
+            </div>
+        </a>
+        <a href="produto.html" class="vinyl">
+            <div class="vinyldiv1">
+                <img class="vinylimage" src="imgs/Albums/Die_Lit.png" alt="">
+                <img class="vinylimage2" src="imgs/vinyl.png" alt="">
+            </div>
+            <div class="vinyl-info">
+                <div class="vinyldiv2">Die Lit</div>
+                <div class="vinyldiv3">Playboi Carti</div>
+                <div class="vinyl-bottom">
+                    <div class="vinyl-price">R$ 179,90</div>
+                    <div class="vinyl-condition usado">Usado</div>
+                </div>
+            </div>
+        </a>
+        <a href="produto.html" class="vinyl">
+            <div class="vinyldiv1">
+                <img class="vinylimage" src="imgs/Albums/sunset-3000x3000.jpg" alt="">
+                <img class="vinylimage2" src="imgs/vinyl.png" alt="">
+            </div>
+            <div class="vinyl-info">
+                <div class="vinyldiv2">sunset</div>
+                <div class="vinyldiv3">sunn</div>
+                <div class="vinyl-bottom">
+                    <div class="vinyl-price">R$ 549,90</div>
+                    <div class="vinyl-condition novo">Novo</div>
+                </div>
+            </div>
+        </a>
+        <a href="produto.html" class="vinyl">
+            <div class="vinyldiv1">
+                <img class="vinylimage" src="imgs/Albums/I_Am_Music_by_Playboi_Carti.jpg" alt="">
+                <img class="vinylimage2" src="imgs/vinyl.png" alt="">
+            </div>
+            <div class="vinyl-info">
+                <div class="vinyldiv2">MUSIC</div>
+                <div class="vinyldiv3">Playboi Carti</div>
+                <div class="vinyl-bottom">
+                    <div class="vinyl-price">R$ 229,90</div>
+                    <div class="vinyl-condition novo">Novo</div>
+                </div>
+            </div>
+        </a>
+        <a href="produto.html" class="vinyl">
+            <div class="vinyldiv1">
+                <img class="vinylimage" src="imgs/Albums/tfo.jpg" alt="">
+                <img class="vinylimage2" src="imgs/vinyl.png" alt="">
+            </div>
+            <div class="vinyl-info">
+                <div class="vinyldiv2">The Fall Off</div>
+                <div class="vinyldiv3">J. Cole</div>
+                <div class="vinyl-bottom">
+                    <div class="vinyl-price">R$ 159,90</div>
+                    <div class="vinyl-condition usado">Usado</div>
+                </div>
+            </div>
+        </a>
+        <a href="produto.html" class="vinyl">
+            <div class="vinyldiv1">
+                <img class="vinylimage" src="imgs/Albums/To_Pimp_a_Butterfly.jpg" alt="">
+                <img class="vinylimage2" src="imgs/vinyl.png" alt="">
+            </div>
+            <div class="vinyl-info">
+                <div class="vinyldiv2">To Pimp a Butterfly</div>
+                <div class="vinyldiv3">Kendrick Lamar</div>
+                <div class="vinyl-bottom">
+                    <div class="vinyl-price">R$ 279,90</div>
+                    <div class="vinyl-condition novo">Novo</div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="destaques">
+    <div class="destaquestop">
+        <div class="destaquestitulo">Rock</div>
+        <div class="destaquesvertudo"><a href="">Ver Tudo ></a></div>
+    </div>
+    <div class="destaquesvinyls">
+        <a href="produto.html" class="vinyl">
+            <div class="vinyldiv1">
+                <img class="vinylimage" src="imgs/Albums/meteora.jpg" alt="">
+                <img class="vinylimage2" src="imgs/vinyl.png" alt="">
+            </div>
+            <div class="vinyl-info">
+                <div class="vinyldiv2">Meteora</div>
+                <div class="vinyldiv3">Linkin Park</div>
+                <div class="vinyl-bottom">
+                    <div class="vinyl-price">R$ 199,90</div>
+                    <div class="vinyl-condition novo">Novo</div>
+                </div>
+            </div>
+        </a>
+        <a href="produto.html" class="vinyl">
+            <div class="vinyldiv1">
+                <img class="vinylimage" src="imgs/Albums/sgt peppers.jpg" alt="">
+                <img class="vinylimage2" src="imgs/vinyl.png" alt="">
+            </div>
+            <div class="vinyl-info">
+                <div class="vinyldiv2">Sgt. Peppers</div>
+                <div class="vinyldiv3">Beatles</div>
+                <div class="vinyl-bottom">
+                    <div class="vinyl-price">R$ 349,90</div>
+                    <div class="vinyl-condition usado">Usado</div>
+                </div>
+            </div>
+        </a>
+        <a href="produto.html" class="vinyl">
+            <div class="vinyldiv1">
+                <img class="vinylimage" src="imgs/Albums/blondeonblonde.jpg" alt="">
+                <img class="vinylimage2" src="imgs/vinyl.png" alt="">
+            </div>
+            <div class="vinyl-info">
+                <div class="vinyldiv2">Blonde on Blonde</div>
+                <div class="vinyldiv3">Bob Dylan</div>
+                <div class="vinyl-bottom">
+                    <div class="vinyl-price">R$ 599,90</div>
+                    <div class="vinyl-condition usado">Usado</div>
+                </div>
+            </div>
+        </a>
+        <a href="produto.html" class="vinyl">
+            <div class="vinyldiv1">
+                <img class="vinylimage" src="imgs/Albums/tdsotm.jpg" alt="">
+                <img class="vinylimage2" src="imgs/vinyl.png" alt="">
+            </div>
+            <div class="vinyl-info">
+                <div class="vinyldiv2">The Dark Side of The Moon</div>
+                <div class="vinyldiv3">Pink Floyd</div>
+                <div class="vinyl-bottom">
+                    <div class="vinyl-price">R$ 289,90</div>
+                    <div class="vinyl-condition novo">Novo</div>
+                </div>
+            </div>
+        </a>
+        <a href="produto.html" class="vinyl">
+            <div class="vinyldiv1">
+                <img class="vinylimage" src="imgs/Albums/Court of King Crimson.jpg" alt="">
+                <img class="vinylimage2" src="imgs/vinyl.png" alt="">
+            </div>
+            <div class="vinyl-info">
+                <div class="vinyldiv2">In the Court of the Crimson King</div>
+                <div class="vinyldiv3">King Crimson</div>
+                <div class="vinyl-bottom">
+                    <div class="vinyl-price">R$ 269,90</div>
+                    <div class="vinyl-condition novo">Novo</div>
+                </div>
+            </div>
+        </a>
+        <a href="produto.html" class="vinyl">
+            <div class="vinyldiv1">
+                <img class="vinylimage" src="imgs/Albums/Infallible.jpg" alt="">
+                <img class="vinylimage2" src="imgs/vinyl.png" alt="">
+            </div>
+            <div class="vinyl-info">
+                <div class="vinyldiv2">Infallible</div>
+                <div class="vinyldiv3">Hangar</div>
+                <div class="vinyl-bottom">
+                    <div class="vinyl-price">R$ 149,90</div>
+                    <div class="vinyl-condition usado">Usado</div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="destaques">
+    <div class="destaquestop">
+        <div class="destaquestitulo">Jazz</div>
+        <div class="destaquesvertudo"><a href="">Ver Tudo ></a></div>
+    </div>
+    <div class="destaquesvinyls">
+        <a href="produto.html" class="vinyl">
+            <div class="vinyldiv1">
+                <img class="vinylimage" src="imgs/Albums/KOB.jpg" alt="">
+                <img class="vinylimage2" src="imgs/vinyl.png" alt="">
+            </div>
+            <div class="vinyl-info">
+                <div class="vinyldiv2">Kind of Blue</div>
+                <div class="vinyldiv3">Miles Davis</div>
+                <div class="vinyl-bottom">
+                    <div class="vinyl-price">R$ 259,90</div>
+                    <div class="vinyl-condition novo">Novo</div>
+                </div>
+            </div>
+        </a>
+        <a href="produto.html" class="vinyl">
+            <div class="vinyldiv1">
+                <img class="vinylimage" src="imgs/Albums/ALS.jpg" alt="">
+                <img class="vinylimage2" src="imgs/vinyl.png" alt="">
+            </div>
+            <div class="vinyl-info">
+                <div class="vinyldiv2">A Love Supreme</div>
+                <div class="vinyldiv3">John Coltrane</div>
+                <div class="vinyl-bottom">
+                    <div class="vinyl-price">R$ 199,90</div>
+                    <div class="vinyl-condition usado">Usado</div>
+                </div>
+            </div>
+        </a>
+        <a href="produto.html" class="vinyl">
+            <div class="vinyldiv1">
+                <img class="vinylimage" src="imgs/Albums/TimeOut.jpg" alt="">
+                <img class="vinylimage2" src="imgs/vinyl.png" alt="">
+            </div>
+            <div class="vinyl-info">
+                <div class="vinyldiv2">Time Out</div>
+                <div class="vinyldiv3">David Brubeck</div>
+                <div class="vinyl-bottom">
+                    <div class="vinyl-price">R$ 329,90</div>
+                    <div class="vinyl-condition novo">Novo</div>
+                </div>
+            </div>
+        </a>
+        <a href="produto.html" class="vinyl">
+            <div class="vinyldiv1">
+                <img class="vinylimage" src="imgs/Albums/Head Hunters — Herbie Hancock.jpg" alt="">
+                <img class="vinylimage2" src="imgs/vinyl.png" alt="">
+            </div>
+            <div class="vinyl-info">
+                <div class="vinyldiv2">Head Hunters</div>
+                <div class="vinyldiv3">Herbie Hancock</div>
+                <div class="vinyl-bottom">
+                    <div class="vinyl-price">R$ 179,90</div>
+                    <div class="vinyl-condition usado">Usado</div>
+                </div>
+            </div>
+        </a>
+        <a href="produto.html" class="vinyl">
+            <div class="vinyldiv1">
+                <img class="vinylimage" src="imgs/Albums/Mingus Ah Um — Charles Mingus.jpg" alt="">
+                <img class="vinylimage2" src="imgs/vinyl.png" alt="">
+            </div>
+            <div class="vinyl-info">
+                <div class="vinyldiv2">Mingus Ah Um</div>
+                <div class="vinyldiv3">Charles Mingus</div>
+                <div class="vinyl-bottom">
+                    <div class="vinyl-price">R$ 219,90</div>
+                    <div class="vinyl-condition novo">Novo</div>
+                </div>
+            </div>
+        </a>
+        <a href="produto.html" class="vinyl">
+            <div class="vinyldiv1">
+                <img class="vinylimage" src="imgs/Albums/TBSATSL.jpg" alt="">
+                <img class="vinylimage2" src="imgs/vinyl.png" alt="">
+            </div>
+            <div class="vinyl-info">
+                <div class="vinyldiv2">The Black Saint and the Sinner Lady</div>
+                <div class="vinyldiv3">Charles Mingus</div>
+                <div class="vinyl-bottom">
+                    <div class="vinyl-price">R$ 239,90</div>
+                    <div class="vinyl-condition usado">Usado</div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+    </div>
+
+    <footer class="footer">
+        <div class="footertop">
+            <div class="footercol footerbrand">
+                <img alt="Crate Records" class="footerlogo" src="imgs/CrateRecordsLogo.svg" />
+                <p class="footerdesc">Vinis novos e usados, selecionados com cuidado para quem vive a música de verdade.
+                </p>
+                <div class="footersocial">
+                    <a href=""><img alt="Instagram" src="icons/instagram.png" /></a>
+                    <a href=""><img alt="YouTube" src="icons/youtube.png" /></a>
+                    <a href=""><img alt="TikTok" src="icons/tik-tok.png" /></a>
+                </div>
+            </div>
+            <div class="footercol">
+                <div class="footercoltitle">Comprar</div>
+                <a href="">Todos os Vinis</a>
+                <a href="">Lançamentos</a>
+                <a href="">Mais Vendidos</a>
+                <a href="">Assinatura</a>
+            </div>
+            <div class="footercol">
+                <div class="footercoltitle">Ajuda</div>
+                <a href="">Suporte</a>
+                <a href="">Envio e Prazos</a>
+                <a href="">Devoluções</a>
+                <a href="">Perguntas Frequentes</a>
+            </div>
+            <div class="footercol">
+                <div class="footercoltitle">Empresa</div>
+                <a href="">Sobre Nós</a>
+                <a href="">Venda seus discos para nós</a>
+                <a href="">Trabalhe Conosco</a>
+            </div>
+            <div class="footercol footernews">
+                <div class="footercoltitle">Fique por dentro</div>
+                <p class="footerdesc">Novidades e lançamentos direto no seu e-mail.</p>
+                <div class="footernewsform">
+                    <input placeholder="Seu e-mail" type="text" />
+                    <button class="footernewsbtn">Assinar</button>
+                </div>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <div class="footerbottomleft">© 2026 Crate Records. Todos os direitos reservados.</div>
+            <div class="footerbottomright">
+                <a href="">Termos de Uso</a>
+                <a href="">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!--VINYL CARDS BASE
+        <div class="vinyl">
+        <div class="vinyldiv1"><img class="vinylimage" src="imgs/Albums/sunset-3000x3000.jpg" alt=""></div>
+        <div class="vinyldiv2">sunset</div>
+        <div class="vinyldiv3">sunn</div>
+    </div>-->
+
+
+</body>
+
+</html>

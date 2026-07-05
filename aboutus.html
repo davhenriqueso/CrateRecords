@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós — Crate Records</title>
+    <link rel="stylesheet" href="aboutusstyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-inner">
+            <div class="header-left">
+                <a class="headerlogo-link" href="index.html">
+                    <img class="logoheader" src="imgs/CrateRecordsLogo.svg" alt="Crate Records" width="170" height="40">
+                </a>
+
+                <nav class="headernav" aria-label="Navegação principal">
+                    <a href="allvinyls.html">Todos os Vinis</a>
+                    <a href="aboutus.html">Sobre Nós</a>
+                    <a href="support.html">Suporte</a>
+                </nav>
+            </div>
+
+            <div class="header-right">
+                <form class="headersearch" role="search" action="/busca" method="get">
+                    <label for="header-search-input" class="visually-hidden">Pesquisar</label>
+                    <input id="header-search-input" type="search" name="q" placeholder="Pesquisar">
+                    <button type="submit" class="lupa-btn" aria-label="Buscar">
+                        <img class="lupa" src="imgs/Lupa.svg" alt="">
+                    </button>
+                </form>
+
+                <div class="headeractions">
+                    <a class="headeraction" href="cadastro.html" aria-label="Conta">
+                        <img class="icontopright" src="imgs/User.svg" alt=""><span>Conta</span>
+                    </a>
+                    <a class="headeraction" href="pedidos.html" aria-label="Pedidos">
+                        <img class="icontopright" src="imgs/Heart.svg" alt=""><span>Pedidos</span>
+                    </a>
+                    <a class="headeraction" href="carrinho.html" aria-label="Carrinho">
+                        <img class="icontopright" src="imgs/Shopping cart.svg" alt=""><span>Carrinho</span>
+                        <span class="cartbadge" id="cart-badge">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ══════════════════ HERO ══════════════════ -->
+        <section class="abouthero">
+            <div class="abouthero-grooves" aria-hidden="true"></div>
+            <div class="abouthero-inner">
+                <div class="abouthero-eyebrow">Sobre a Crate Records</div>
+                <h1 class="abouthero-title">Vinil não é nostalgia.<br>É a forma como a música<br>foi feita pra ser
+                    ouvida.</h1>
+                <p class="abouthero-sub">Desde 2019 a gente garimpa, confere e cataloga discos pra quem ainda
+                    acredita numa agulha bem calibrada — e num groove que sample nenhum não substitui.</p>
+                <a href="allvinyls.html" class="abouthero-cta">Ver Catálogo</a>
+            </div>
+            <div class="abouthero-vinylwrap" aria-hidden="true">
+            </div>
+        </section>
+
+        <!-- ══════════════════ HISTÓRIA ══════════════════ -->
+        <section class="aboutstory">
+            <div class="aboutstory-inner">
+                <div class="aboutstory-text">
+                    <span class="aboutsection-label">A origem</span>
+                    <h2>Começou numa pilha de caixas</h2>
+                    <p>A Crate Records nasceu de gente que produz, sample e escuta disco com o mesmo respeito que tem
+                        por uma boa mixagem. Antes de virar loja, era só uma coleção crescendo demais pra caber no
+                        quarto — caixas empilhadas, catálogo numa planilha, e a certeza de que tinha muita gente
+                        procurando a mesma prensagem que a gente.</p>
+                    <p>Hoje seguimos com a mesma lógica de garimpeiro: cada disco que entra no catálogo passou por
+                        mão, agulha e ouvido antes de chegar até você.</p>
+                    <p class="negrito">De colecionadores para colecionadores.</p>
+                </div>
+                <div class="aboutstory-stats">
+                    <div class="aboutstat">
+                        <div class="aboutstat-num">5.200+</div>
+                        <div class="aboutstat-label">Discos catalogados</div>
+                    </div>
+                    <div class="aboutstat">
+                        <div class="aboutstat-num">2019</div>
+                        <div class="aboutstat-label">Ano de fundação</div>
+                    </div>
+                    <div class="aboutstat">
+                        <div class="aboutstat-num">26</div>
+                        <div class="aboutstat-label">Estados atendidos</div>
+                    </div>
+                    <div class="aboutstat">
+                        <div class="aboutstat-num">100%</div>
+                        <div class="aboutstat-label">Conferência manual</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ══════════════════ VALORES ══════════════════ -->
+        <section class="aboutvalues">
+            <div class="aboutvalues-inner">
+                <div class="aboutvalues-grid">
+                    <div class="aboutvalue">
+                        <h3>Autenticidade</h3>
+                        <p>Prensagem original, sem remaster pirata nem etiqueta enganosa. O que tá descrito é o que
+                            chega.</p>
+                    </div>
+                    <div class="aboutvalue">
+                        <h3>Comunidade</h3>
+                        <p>Feito pra quem produz, sample e escuta — trocas, dicas e indicação fazem parte da loja.
+                        </p>
+                    </div>
+                    <div class="aboutvalue">
+                        <h3>Cuidado</h3>
+                        <p>Do garimpo até a sua porta, cada etapa é tratada como se o disco fosse pra coleção da
+                            gente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="aboutcta">
+            <div class="aboutcta-inner">
+                <a href="allvinyls.html" class="aboutcta-btn">Ver Todos os Vinis</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footertop">
+            <div class="footercol footerbrand">
+                <img class="footerlogo" src="imgs/CrateRecordsLogo.svg" alt="Crate Records">
+                <p class="footerdesc">Vinis novos e usados, selecionados com cuidado para quem vive a música de verdade.
+                </p>
+                <div class="footersocial">
+                    <a href=""><img src="icons/instagram.png" alt="Instagram"></a>
+                    <a href=""><img src="icons/youtube.png" alt="YouTube"></a>
+                    <a href=""><img src="icons/tik-tok.png" alt="TikTok"></a>
+                </div>
+            </div>
+
+            <div class="footercol">
+                <div class="footercoltitle">Comprar</div>
+                <a href="">Todos os Vinis</a>
+                <a href="">Lançamentos</a>
+                <a href="">Mais Vendidos</a>
+                <a href="">Assinatura</a>
+            </div>
+
+            <div class="footercol">
+                <div class="footercoltitle">Ajuda</div>
+                <a href="">Suporte</a>
+                <a href="">Envio e Prazos</a>
+                <a href="">Devoluções</a>
+                <a href="">Perguntas Frequentes</a>
+            </div>
+
+            <div class="footercol">
+                <div class="footercoltitle">Empresa</div>
+                <a href="about.html">Sobre Nós</a>
+                <a href="">Venda seus discos para nós</a>
+                <a href="">Trabalhe Conosco</a>
+            </div>
+
+            <div class="footercol footernews">
+                <div class="footercoltitle">Fique por dentro</div>
+                <p class="footerdesc">Novidades e lançamentos direto no seu e-mail.</p>
+                <div class="footernewsform">
+                    <input type="text" placeholder="Seu e-mail">
+                    <button class="footernewsbtn">Assinar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footerbottom">
+            <div class="footerbottomleft">© 2026 Crate Records. Todos os direitos reservados.</div>
+            <div class="footerbottomright">
+                <a href="">Termos de Uso</a>
+                <a href="">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em Contato | Crate Records</title>
+    <link rel="stylesheet" href="supportstyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-inner">
+            <div class="header-left">
+                <a class="headerlogo-link" href="index.html">
+                    <img class="logoheader" src="imgs/CrateRecordsLogo.svg" alt="Crate Records" width="170" height="40">
+                </a>
+
+                <nav class="headernav" aria-label="Navegação principal">
+                    <a href="allvinyls.html">Todos os Vinis</a>
+                    <a href="aboutus.html">Sobre Nós</a>
+                    <a href="support.html">Suporte</a>
+                </nav>
+            </div>
+
+            <div class="header-right">
+                <form class="headersearch" role="search" action="/busca" method="get">
+                    <label for="header-search-input" class="visually-hidden">Pesquisar</label>
+                    <input id="header-search-input" type="search" name="q" placeholder="Pesquisar">
+                    <button type="submit" class="lupa-btn" aria-label="Buscar">
+                        <img class="lupa" src="imgs/Lupa.svg" alt="">
+                    </button>
+                </form>
+
+                <div class="headeractions">
+                    <a class="headeraction" href="cadastro.html" aria-label="Conta">
+                        <img class="icontopright" src="imgs/User.svg" alt=""><span>Conta</span>
+                    </a>
+                    <a class="headeraction" href="pedidos.html" aria-label="Pedidos">
+                        <img class="icontopright" src="imgs/Heart.svg" alt=""><span>Pedidos</span>
+                    </a>
+                    <a class="headeraction" href="carrinho.html" aria-label="Carrinho">
+                        <img class="icontopright" src="imgs/Shopping cart.svg" alt=""><span>Carrinho</span>
+                        <span class="cartbadge" id="cart-badge">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <img src="imgs/EntreEmContato.png" alt="Entre em Contato">
+        <a href="#faq" class="explorarbtn">Ver FAQ</a>
+    </div>
+
+    <div id="sec02">
+
+        <div class="info">
+            <div>
+                <div><img src="imgs/adressico.png" alt=""></div>
+                <div>
+                    <h1>Endereço</h1>
+                    <p>Avenida Olegário Maciel, 1600<br>
+                        Bairro Lourdes<br>
+                        Belo Horizonte - MG</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="imgs/emailico.png" alt=""></div>
+                <div>
+                    <h1>E-Mail</h1>
+                    <p>contato@craterecords.com.br<br>
+                        suporte@craterecords.com.br</p>
+                </div>
+            </div>
+            <div>
+                <div><img src="imgs/phoneico.png" alt=""></div>
+                <div>
+                    <h1>Telefone</h1>
+                    <p>(31) 99999-9999<br>
+                        Seg-Sex · 9h às 18h</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faleconosco">
+            <div class="divi01">
+                <img src="imgs/FaleConosco.png" alt="">
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem
+                    placerat. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                    pellentesque sem placerat. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex
+                    sapien vitae pellentesque sem placerat. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+                    faucibus ex sapien vitae pellentesque sem placerat. Lorem ipsum dolor sit amet consectetur adipiscing
+                    elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.</p>
+            </div>
+            <div class="divi02">
+                <div class="falecima">
+                    <div>
+                        <h1>Nome Completo</h1>
+                        <h2> *</h2>
+                        <input type="text" placeholder="Digite seu nome completo">
+                    </div>
+                    <div>
+                        <h1>E-Mail</h1>
+                        <h2> *</h2>
+                        <input type="text" placeholder="seu@email.com">
+                    </div>
+                    <div>
+                        <h1>Telefone</h1>
+                        <h2> *</h2>
+                        <input type="text" placeholder="(31) 90000-0000">
+                    </div>
+                    <div>
+                        <h1>Assunto</h1>
+                        <h2> *</h2>
+                        <input type="text" placeholder="Digite o Assunto">
+                    </div>
+                </div>
+                <div class="falebaixo">
+                    <div>
+                        <textarea placeholder="Escreva sua mensagem..."></textarea>
+                    </div>
+                    <div>
+                        <label class="faleconciv">
+                            <input type="checkbox">
+                            Concordo com a <a href="">Política de Privacidade</a>
+                        </label>
+                        <button class="enviarbtn">Enviar Mensagem</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="faqsection" id="faq">
+            <div class="faqlabel">FAQ</div>
+            <h2 class="faqtitle">Perguntas Frequentes</h2>
+            <hr class="faqunderline">
+
+            <div class="faqlist">
+                <div class="faqitem">
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.</p>
+                </div>
+                <div class="faqitem">
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.</p>
+                </div>
+                <div class="faqitem">
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="footertop">
+            <div class="footercol footerbrand">
+                <img class="footerlogo" src="imgs/CrateRecordsLogo.svg" alt="Crate Records">
+                <p class="footerdesc">Vinis novos e usados, selecionados com cuidado para quem vive a música de verdade.</p>
+                <div class="footersocial">
+                    <a href=""><img src="icons/instagram.png" alt="Instagram"></a>
+                    <a href=""><img src="icons/youtube.png" alt="YouTube"></a>
+                    <a href=""><img src="icons/tik-tok.png" alt="TikTok"></a>
+                </div>
+            </div>
+
+            <div class="footercol">
+                <div class="footercoltitle">Comprar</div>
+                <a href="">Todos os Vinis</a>
+                <a href="">Lançamentos</a>
+                <a href="">Mais Vendidos</a>
+                <a href="">Assinatura</a>
+            </div>
+
+            <div class="footercol">
+                <div class="footercoltitle">Ajuda</div>
+                <a href="">Suporte</a>
+                <a href="">Envio e Prazos</a>
+                <a href="">Devoluções</a>
+                <a href="">Perguntas Frequentes</a>
+            </div>
+
+            <div class="footercol">
+                <div class="footercoltitle">Empresa</div>
+                <a href="">Sobre Nós</a>
+                <a href="">Venda seus discos para nós</a>
+                <a href="">Trabalhe Conosco</a>
+            </div>
+
+            <div class="footercol footernews">
+                <div class="footercoltitle">Fique por dentro</div>
+                <p class="footerdesc">Novidades e lançamentos direto no seu e-mail.</p>
+                <div class="footernewsform">
+                    <input type="text" placeholder="Seu e-mail">
+                    <button class="footernewsbtn">Assinar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footerbottom">
+            <div class="footerbottomleft">© 2026 Crate Records. Todos os direitos reservados.</div>
+            <div class="footerbottomright">
+                <a href="">Termos de Uso</a>
+                <a href="">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--VINYL CARDS BASE
+            <div class="vinyl">
+            <div class="vinyldiv1"><img class="vinylimage" src="imgs/Albums/sunset-3000x3000.jpg" alt=""></div>
+            <div class="vinyldiv2">sunset</div>
+            <div class="vinyldiv3">sunn</div>
+        </div>-->
+
+
+</body>
+
+</html>

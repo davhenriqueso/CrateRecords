@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Carrinho | Crate Records</title>
+    <link rel="stylesheet" href="carrinhostyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="topblackbar">
+        <div class="topblackbararea">
+            <div class="leftblackbar">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="1" y="7" width="14" height="10"></rect>
+                    <path d="M15 10h4l3 3v4h-7z"></path>
+                    <circle cx="6" cy="19" r="2"></circle>
+                    <circle cx="18" cy="19" r="2"></circle>
+                </svg>
+                Frete grátis acima de R$299
+            </div>
+            <div class="middleblackbar">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M3 12h18"></path>
+                    <path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"></path>
+                </svg>
+                Envio para todo o Brasil
+            </div>
+            <div class="rightblackbar">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 11l9-7l9 7"></path>
+                    <path d="M5 10v9h14v-9"></path>
+                </svg>
+                Devoluções fáceis em até 7 dias
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header-inner">
+            <div class="header-left">
+                <a class="headerlogo-link" href="index.html">
+                    <img class="logoheader" src="imgs/CrateRecordsLogo.svg" alt="Crate Records" width="170" height="40">
+                </a>
+
+                <nav class="headernav" aria-label="Navegação principal">
+                    <a href="allvinyls.html">Todos os Vinis</a>
+                    <a href="aboutus.html">Sobre Nós</a>
+                    <a href="support.html">Suporte</a>
+                </nav>
+            </div>
+
+            <div class="header-right">
+                <form class="headersearch" role="search" action="/busca" method="get">
+                    <label for="header-search-input" class="visually-hidden">Pesquisar</label>
+                    <input id="header-search-input" type="search" name="q" placeholder="Pesquisar">
+                    <button type="submit" class="lupa-btn" aria-label="Buscar">
+                        <img class="lupa" src="imgs/Lupa.svg" alt="">
+                    </button>
+                </form>
+
+                <div class="headeractions">
+                    <a class="headeraction" href="cadastro.html" aria-label="Conta">
+                        <img class="icontopright" src="imgs/User.svg" alt=""><span>Conta</span>
+                    </a>
+                    <a class="headeraction" href="pedidos.html" aria-label="Pedidos">
+                        <img class="icontopright" src="imgs/Heart.svg" alt=""><span>Pedidos</span>
+                    </a>
+                    <a class="headeraction" href="carrinho.html" aria-label="Carrinho">
+                        <img class="icontopright" src="imgs/Shopping cart.svg" alt=""><span>Carrinho</span>
+                        <span class="cartbadge" id="cart-badge">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="carrinhowrap">
+        <img class="carrinhotitle" src="imgs/Meu Carrinho.png" alt="">
+        <p class="carrinhosub" id="itemcount-label">3 itens no seu carrinho</p>
+
+        <div class="carrinhogrid">
+
+            <div>
+                <div class="itemlist" id="item-list">
+
+                    <div class="carrinhoitem">
+                        <img src="imgs/Albums/astro.jpg" alt="Capa do álbum Astroworld">
+                        <div class="iteminfo">
+                            <h2>Astroworld</h2>
+                            <p class="itemartista">Travis Scott</p>
+                        </div>
+                        <div class="itemqty">
+                            <label class="visually-hidden" for="qty-1">Quantidade</label>
+                            <input class="qtyinput" type="number" id="qty-1" name="qty-1" value="1" min="1" max="10">
+                        </div>
+                        <div class="itemprecos">
+                            <div class="itemprecounit">R$ 219,90</div>
+                            <div class="itemprecototal">R$ 189,90</div>
+                        </div>
+                        <button class="removeitem" aria-label="Remover item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#DD0B38" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 7h16"></path>
+                                <path d="M6 7l1 13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-13"></path>
+                                <path d="M9 7V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="carrinhoitem">
+                        <img src="imgs/Albums/birds.jpg" alt="Capa do álbum Birds in the Trap Sing McKnight">
+                        <div class="iteminfo">
+                            <h2>Birds in the Trap Sing McKnight</h2>
+                            <p class="itemartista">Travis Scott</p>
+                        </div>
+                        <div class="itemqty">
+                            <label class="visually-hidden" for="qty-2">Quantidade</label>
+                            <input class="qtyinput" type="number" id="qty-2" name="qty-2" value="1" min="1" max="10">
+                        </div>
+                        <div class="itemprecos">
+                            <div class="itemprecounit">R$ 159,90</div>
+                            <div class="itemprecototal">R$ 159,90</div>
+                        </div>
+                        <button class="removeitem" aria-label="Remover item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#DD0B38" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 7h16"></path>
+                                <path d="M6 7l1 13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-13"></path>
+                                <path d="M9 7V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="carrinhoitem">
+                        <img src="imgs/Albums/daysbefore.jpg" alt="Capa do álbum Days Before Rodeo">
+                        <div class="iteminfo">
+                            <h2>Days Before Rodeo</h2>
+                            <p class="itemartista">Travis Scott</p>
+                        </div>
+                        <div class="itemqty">
+                            <label class="visually-hidden" for="qty-3">Quantidade</label>
+                            <input class="qtyinput" type="number" id="qty-3" name="qty-3" value="1" min="1" max="10">
+                        </div>
+                        <div class="itemprecos">
+                            <div class="itemprecounit">R$ 129,90</div>
+                            <div class="itemprecototal">R$ 99,95</div>
+                        </div>
+                        <button class="removeitem" aria-label="Remover item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#DD0B38" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 7h16"></path>
+                                <path d="M6 7l1 13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-13"></path>
+                                <path d="M9 7V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+
+                <a class="continuarcomprando" href="allvinyls.html">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#2064B8" stroke-width="2.4" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M9 5l7 7l-7 7"></path>
+                    </svg>
+                    Continuar Comprando
+                </a>
+            </div>
+
+            <aside class="resumobox">
+                <div class="resumotitle">Resumo do Pedido</div>
+
+                <div class="resumolinha">
+                    <span>Subtotal</span>
+                    <span id="resumo-subtotal">R$ 449,75</span>
+                </div>
+                <div class="resumolinha frete">
+                    <span>Frete</span>
+                    <span id="resumo-frete">Grátis</span>
+                </div>
+                <div class="resumolinha">
+                    <span>Descontos</span>
+                    <span id="resumo-desconto">− R$ 100,00</span>
+                </div>
+
+                <hr class="resumodivider">
+
+                <div class="resumototal">
+                    <span>Total</span>
+                    <span id="resumo-total">R$ 449,75</span>
+                </div>
+
+                <button class="checkoutbtn">Finalizar Compra</button>
+
+                <div class="resumoseguro">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect x="4" y="10" width="16" height="10" rx="2"></rect>
+                        <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+                    </svg>
+                    Pagamento 100% seguro
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footertop">
+            <div class="footercol footerbrand">
+                <img class="footerlogo" src="imgs/CrateRecordsLogo.svg" alt="Crate Records">
+                <p class="footerdesc">Vinis novos e usados, selecionados com cuidado para quem vive a música de verdade.
+                </p>
+                <div class="footersocial">
+                    <a href=""><img src="icons/instagram.png" alt="Instagram"></a>
+                    <a href=""><img src="icons/youtube.png" alt="YouTube"></a>
+                    <a href=""><img src="icons/tik-tok.png" alt="TikTok"></a>
+                </div>
+            </div>
+
+            <div class="footercol">
+                <div class="footercoltitle">Comprar</div>
+                <a href="">Todos os Vinis</a>
+                <a href="">Lançamentos</a>
+                <a href="">Mais Vendidos</a>
+                <a href="">Assinatura</a>
+            </div>
+
+            <div class="footercol">
+                <div class="footercoltitle">Ajuda</div>
+                <a href="">Suporte</a>
+                <a href="">Envio e Prazos</a>
+                <a href="">Devoluções</a>
+                <a href="">Perguntas Frequentes</a>
+            </div>
+
+            <div class="footercol">
+                <div class="footercoltitle">Empresa</div>
+                <a href="">Sobre Nós</a>
+                <a href="">Venda seus discos para nós</a>
+                <a href="">Trabalhe Conosco</a>
+            </div>
+
+            <div class="footercol footernews">
+                <div class="footercoltitle">Fique por dentro</div>
+                <p class="footerdesc">Novidades e lançamentos direto no seu e-mail.</p>
+                <div class="footernewsform">
+                    <input type="text" placeholder="Seu e-mail">
+                    <button class="footernewsbtn">Assinar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footerbottom">
+            <div class="footerbottomleft">© 2026 Crate Records. Todos os direitos reservados.</div>
+            <div class="footerbottomright">
+                <a href="">Termos de Uso</a>
+                <a href="">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
